@@ -1,0 +1,262 @@
+body{
+    margin: 0;
+    background-color: rgb(236, 236, 236);
+    font-family: "Quicksand", sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+.navbarMail{
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    position: relative;
+}
+
+.navbarMail::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    display: block;
+    height: 1.2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+}
+
+.navbarMail:hover::after{
+    width: 100%; 
+    left: 0;
+}
+
+.page{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 76vh;
+    background-image: url(https://www.computerra.ru/wp-content/uploads/2021/04/1-5.jpg);
+    background-blend-mode: multiply;
+    background-color: #495e6f;
+    background-size: 100%;
+    text-align: center;
+}
+
+.mail{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+.mail:hover{
+    color: rgb(175, 174, 174);
+}
+
+.WelcomeText{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    opacity: 0;
+    font-size: 45px;
+    color: rgb(227, 227, 227);
+    animation: AnimText 1s linear 1 alternate 0s forwards;
+}
+
+@keyframes AnimText {
+    0%{
+        top: -30px;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.SecondWelcomeText{
+    color: rgb(195, 195, 195);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    top: 87px;
+    font-size: 22px;
+    animation: AnimTextTwo 1s linear 1 alternate 0s forwards;
+}
+
+@keyframes AnimTextTwo {
+    0%{
+        left: -120px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.content{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorBlockContent{
+    background-color: rgb(218, 218, 218);
+}
+
+.textContent{
+    padding: 30px;
+}
+
+.menu{
+    position: absolute;
+    top: 470px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.navbar{
+    display: inline;
+    position: relative;
+    padding: 5px;
+}
+
+.footer{
+    background-color: rgb(19, 19, 19);
+    margin-top: auto;
+    color: rgb(209, 209, 209);
+    text-align: center;
+}
+
+.footerContentBlock{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.footerContentFeedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35px;
+}
+
+.footerContentCourses{
+    padding-right: 35px;
+}
+
+.TextCourses{
+    margin: 10px;
+}
+
+ .copyright {
+    padding-bottom: 3px;
+    position: relative;
+ }
+
+ .copyright::after{
+    content: "";
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    height: 1.5px;
+    width: 100%;
+    background: rgb(218, 218, 218);
+}
+
+.PHP{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.PHP:hover{
+    color: rgb(38, 163, 119);
+}
+
+.JS{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.JS:hover{
+    color: rgb(255, 116, 78);
+}
+
+.Other{
+    color: rgb(209, 209, 209);
+    text-decoration: none;
+}
+
+.Other:hover{
+    color: rgb(175, 174, 174);
+}
+
+@media screen and (min-width: 1810px) {
+    .navbarMail{
+        font-size: 16.7px;
+    }
+    
+    .navbarMail::after{
+        height: 1.8px;
+    }
+    
+    .header{
+        height: 76vh;
+    }
+    
+    .WelcomeText{
+        top: 20px;
+        font-size: 58px
+    }
+    
+    .SecondWelcomeText{
+        top: 105px;
+        font-size: 32px;
+    }
+     
+    .content{
+        height: 300px;
+    }
+    
+    .textContent{
+        font-size: 26px;
+    }
+    
+    .menu{
+        top: 735px;
+    }
+
+    .footerContentBlock {
+        font-size: 22px;
+    }
+    
+     .copyright {
+        font-size: 20px;
+     }
+    
+     .copyright::after{
+        bottom: 38px;
+        height: 1.5px;
+    }
+}
+
