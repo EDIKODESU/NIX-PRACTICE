@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Открытие новых окон и запись содержания</title>
+<style type="text/css">
+	html{
+		background:#fff;
+		font:16px calibri, sans-serif;
+		cursor:default;
+	}
+	p {
+		float:left;
+		margin:0 10px 0 0;
+		padding:15px;
+	}
+	.p1{
+		background:#ccf;
+	}
+	.p2{
+		background:#fcc;
+	}
+	.p3{
+		background:#cfc;
+	}
+</style>
+<script type="text/javascript">
+	name = 'Это я его открыло!';
+	let wnd; /* НОВОЕ ОКНО! */
+	let main_width = screen.width;
+	let main_height = screen.height;
+
+	let newWin_width = 300;
+	let newWin_height = 200;
+
+	let newWin_left = (main_width - newWin_width)/2;
+	let newWin_top = (main_height - newWin_height)/2;
+
+	function openWnd() {
+		wnd = window.open("", "newWin", `width = ${newWin_width}px, height = ${newWin_height}px, left = ${newWin_left}px, top = ${newWin_top}px`);
+		wnd.focus();
+	}
+
+	function docWrite() {
+		if (!wnd) console.log("Вікно закрито !");
+		else 
+		{	
+			wnd.document.write("<title>new title</title>");
+			wnd.document.write("<style>html{background:#369;color:#fff;font:16px calibri, sans-serif;}</style>");
+			wnd.document.write("<p>Текст параграфа</p>");
+			wnd.document.write("<script>alert(opener.name);<\/script>");
+		}
+	}
+
+	function winClose() {
+		if (wnd && !wnd.closed) {
+			wnd.close();
+			wnd = null;
+		}
+		else console.log("Вікно закрито !");
+	}
+</script>
+</head>
+<body>
+<p class="p1"><a href="javascript:openWnd();">Открыть окно</a></p>
+<p class="p3"><a href="javascript:docWrite();">Заполнить окно</a></p>
+<p class="p2"><a href="javascript:winClose();">Закрыть окно</a></p>
+</body>
+</html>

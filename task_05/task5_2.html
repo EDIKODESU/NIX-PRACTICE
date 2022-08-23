@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html>
+<head>
+	<title>Проверка формы перед отправкой</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		form div input { border-style: solid; border-color: #999 }
+		a{background:silver;color:black;border:3px groove silver;text-decoration: none;font-weight:bold}
+		div.button{margin-top:10px}
+	</style>
+	<script type="text/javascript">
+		function checkForm()
+		{	
+			const inputs = document.getElementsByTagName('input');
+			const form = document.forms[0];
+			let err = false;
+			for(let i = 0; i < inputs.length; i++)
+			{	
+				if(inputs[i].value == "") 
+				{ 
+					inputs[i].style.borderColor = "red" 
+					err = true;
+				}
+				else inputs[i].style.borderColor = "#999";
+			}
+			if(err)
+			{
+				alert("Не всі поля заповнені :(");
+				err = false;
+				return;
+			}
+			else form.submit();
+		}			
+	</script>	
+</head>
+
+<body>
+	<h1>Проверка формы перед отправкой</h1>
+	<form id="myForm" name="myForm" action="">
+		<fieldset>
+			<legend>Форма</legend>
+			<div>
+				<label for="txt1">Поле 1</label>
+				<input type="text" name="p1" id="txt1">
+			</div>
+			<div>
+				<label for="txt2">Поле 2</label>
+				<input type="text" name="p2" id="txt2">
+			</div>
+			<div>
+				<label for="txt3">Поле 3</label>
+				<input type="text" name="p3" id="txt3">
+			</div>
+			<div>
+				<label for="txt4">Поле 4</label>
+				<input type="text" name="p4" id="txt4">
+			</div>
+			<div>
+				<label for="txt5">Поле 5</label>
+				<input type="text" name="p5" id="txt5">
+			</div>
+			<div class="button">
+			<a href="javascript:checkForm()">Передать форму</a>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

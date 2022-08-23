@@ -1,0 +1,94 @@
+﻿<!doctype html>
+
+<html>
+<head>
+	<title>Раскрывающейся списка</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		ul.expandable li { list-style-image: url('img/point.gif') }
+		li ul.expandable { display: block }
+	</style>
+	<script type="text/javascript">
+		function setPlusIcon(){
+			const ref = document.querySelectorAll("a");
+			const li = document.querySelectorAll("li");
+			for(let i = 0; i < ref.length; i++)
+			{
+				if(ref[i].parentNode.querySelector(".expandable")) ref[i].parentElement.style.listStyleImage = "url('img/plus.gif')";
+				if(ref[i].nextElementSibling && ref[i].nextElementSibling.tagName == "UL") ref[i].nextElementSibling.style.display = "none";
+				ref[i].onclick = aClick;
+			}
+		}
+
+		function aClick(e){
+			let targ = e.target;
+			let liParent = targ.parentElement; 
+			let childContainer = targ.parentNode.querySelector(".expandable");
+			if(childContainer)
+			{
+				e.preventDefault();
+				if (childContainer.style.display == "none")
+				{
+					childContainer.style.display = "block";
+					liParent.style.listStyleImage = "url('img/minus.gif')";
+				} 
+				else 
+				{
+					childContainer.style.display = "none";
+					liParent.style.listStyleImage = "url('img/plus.gif')";
+				}
+			}
+		}
+		window.onload = setPlusIcon;
+		
+	</script>
+</head>
+
+<body>
+	<h1>Пример раскрывающегося списка</h1>
+	<ul class="expandable">
+		<li>
+			<a href="#">Книги</a>
+			<ul class="expandable">
+				<li>
+					<a href="#">Отечественные</a>
+					<ul class="expandable">
+						<li><a href="#">Детективы</a></li>
+						<li><a href="#">Научная фантастика</a></li>
+						<li><a href="#">Исторические</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Зарубежные</a>
+					<ul class="expandable">
+						<li><a href="#">Детективы</a></li>
+						<li><a href="#">Научная фантастика</a></li>
+						<li><a href="#">Исторические</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+ 		<li>
+			<a href="#">DVD</a>
+			<ul class="expandable">
+				<li>
+					<a href="#">Отечественные</a>
+					<ul class="expandable">
+						<li><a href="#">Детективы</a></li>
+						<li><a href="#">Научная фантастика</a></li>
+						<li><a href="#">Исторические</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Зарубежные</a>
+					<ul class="expandable">
+						<li><a href="#">Детективы</a></li>
+						<li><a href="#">Научная фантастика</a></li>
+						<li><a href="#">Исторические</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
