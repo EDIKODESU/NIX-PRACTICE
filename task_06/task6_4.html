@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Практическая работа 4</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			//Завдання 1
+			$(".container").on("mouseenter", function(){
+				$(this).css("background-color", "yellow").css("transition", "background-color 0.7s ease"); 
+				$(".mylist").children().each(function(i){
+					if(i == 2) $(this).css("background-color", "red").css("transition", "background-color 0.7s ease"); 
+				});
+			});
+
+			//Завдання 2
+			$(".container").on("click", function(){
+				$(".mylist").slideUp(1000);
+			});
+
+			//Завдання 3
+			$(".container").on("mouseleave", function(){
+				$(this).css("background-color", "");
+				$(".mylist").slideDown(1000);
+				$(".mylist").children().css("background-color", "")
+			});
+		});
+	</script>
+	<style> 
+		.container{border: 1px solid green; height:100px}
+	</style>
+	</head>
+	<body>
+		<h1>Работаем с эффектами jQuery</h1>
+		<div id='container' class='container'>
+			<ul class="mylist"> 
+				<li>Позиция 1</li>
+				<li>Позиция 2</li> 
+				<li>Позиция 3</li>	
+			</ul>
+		</div>
+	</body>
+</html>
