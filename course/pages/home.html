@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="vievport" content="width = device - width, initial-scale = 1">
+    <link href="../style/header.css" rel="stylesheet" type="text/css">
+    <link href="../style/HomeStyle.css" rel="stylesheet" type="text/css">
+    <link href="../style/favoriteProduct.css" rel="stylesheet" type="text/css">
+    <link href="../style/ProductStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Spectral SC"/>
+    <title>course</title>
+</head>
+    
+<body>
+    <div class="head_info_box">
+        <div class="head_info_content">
+            <div class="head_info head_info_phone">
+                    <img class="image_head" src="../img/phone.svg" alt="phone">
+                    <p>+1 (824) 765 28 20</p>
+            </div>
+            <div class="head_info head_info_loc">
+                    <img class="image_head" src="../img/location.svg" alt="loc">
+                    <p>г. Киев, ул. Петра Алексеева, д. 6</p>
+            </div>
+            <div class="head_info head_info_clock">
+                    <img class="image_head" src="../img/clock.svg" alt="clock">
+                    <p>Ежедневно с 10:00 до 19:00</p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header_layout">
+            <div class="left_info_header">
+                <p class="header_catalog">Каталог</p>
+                <p class="header_catalog">Оплата и доставка</p>
+                <p class="header_catalog">Бонусная программа</p>
+                <p class="header_catalog">О компании</p>
+                <p class="header_catalog">Контакты</p>
+            </div>
+            <img class="image_logo" src="../img/image_2022-08-28_00-43-58.png" alt="logo">
+            <div class="right_info_header">
+                <div class="btn_seach seach_pop_up">
+                    <input class="seach" type="text" placeholder="Поиск товара"> 
+                    <img class="icon_seach" src="../img/seach.svg" alt="seach"></div>
+                </div>
+                <div class="pop_up_screen_seach" id="pop_up_screen_seach"></div>
+                <button class="btn">
+                    <img class="image_header" src="../img/avatar.svg" alt="ava">
+                    Войти
+                </button>
+                <button class="btn openFavoritesWindow">
+                    <div class="countFavoriteProduct"></div>
+                    <img class="image_header" src="../img/heard.svg" alt="like">
+                    Избранное
+                </button>
+                <button class="btn">
+                    <img class="image_header" src="../img/koshik.svg" alt="koshik">
+                    Корзина
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="page">
+        <div class="box_slide_circle">
+            <img class="image_circle" src="../img/circle.svg" alt="circle">
+            <div class="slider">
+                <div class="btn_pos">
+                    <p class="left_slide">&#60;</p>
+                    <p class="numb_slider"></p>
+                    <p class="right_slide">&#62;</p>
+                </div>
+                <div class="image_slide_line">
+                    <img class="image_slider" src="../img/image_2022-08-27_21-56-10.png" alt="slider">
+                    <img class="image_slider" src="../img/Без имени-1.png" alt="slider">
+                    <img class="image_slider" src="../img/Без имени-4.png" alt="slider">
+                    <img class="image_slider" src="../img/image_2022-08-27_21-56-10.png" alt="slider">
+                    <img class="image_slider" src="../img/Без имени-1.png" alt="slider">
+                </div>
+            </div>
+        </div>
+        <div class="path">
+            <p>Главная</p>
+            <img class="image_arrow" src="../img/arrow.svg" alt="arrow">
+            <p>Каталог</p>
+            <img class="image_arrow" src="../img/arrow.svg" alt="arrow">
+            <p>Макраме</p>
+        </div>
+        <div class="sort_cost">
+            <button class="btn btn_arrowDown"> 
+                <div class="btn_content">
+                    Цена
+                    <img class="image_arrow_down" src="../img/arrow_down.svg" alt="arrow">
+                </div>
+            </button>
+            <button class="btn btn_arrowUP">
+                <div class="btn_content">
+                    Цена
+                    <img class="image_arrow_up" src="../img/arrow_down.svg" alt="arrow">
+                </div>
+            </button>
+        </div>
+        <main class="main">
+            <div class="filters">
+                <div class="filter_content">
+                    <p class="f_heeader_filter">Тип изделий</p>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="type1" class="checkbox" name="interest" value="Шпагат, шнуры, веревки">
+                        <label for="type1">Шпагат, шнуры, веревки</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="type2" class="checkbox" name="interest" value="Кольца, бусины">
+                        <label for="type2">Кольца, бусины</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="type3" class="checkbox" name="interest" value="Джут">
+                        <label for="type3">Джут</label>
+                    </div>
+                </div>
+                <div class="filter_content">
+                    <p class="heeader_filter">Состав</p>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="compoud1" class="checkbox" name="interest" value="Хлопок">
+                        <label for="compoud1">Хлопок</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="compoud2" class="checkbox" name="interest" value="Синтетика">
+                        <label for="compoud2">Синтетика</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="compoud3" class="checkbox" name="interest" value="С сердечником">
+                        <label for="compoud3">С сердечником</label>
+                    </div>
+                </div>
+                <div class="filter_content">
+                    <p class="heeader_filter">Диаметр</p>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="diamert1" class="checkbox" name="interest" value="3">
+                        <label for="diamert1">3 мм</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="diamert2" class="checkbox" name="interest" value="4">
+                        <label for="diamert2">4 мм</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="diamert3" class="checkbox" name="interest" value="4.5">
+                        <label for="diamert3">4,5 мм</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="diamert4" class="checkbox" name="interest" value="5">
+                        <label for="diamert4">5 мм</label>
+                    </div>
+                </div>
+                <div class="filter_content">
+                    <p class="heeader_filter">Производитель</p>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="manufacturer1" class="checkbox" name="interest" value="Macrametr">
+                        <label for="manufacturer1">Macrametr</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="manufacturer2" class="checkbox" name="interest" value="Зефирка">
+                        <label for="manufacturer2">Зефирка</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="manufacturer3" class="checkbox" name="interest" value="Гамма">
+                        <label for="manufacturer3">Гамма</label>
+                    </div>
+                    <div class="content_checkbox">
+                        <input type="checkbox" id="manufacturer4" class="checkbox" name="interest" value="Сибшнур">
+                        <label for="manufacturer4">Сибшнур</label>
+                    </div>
+                </div>
+                <button class="btn_show">Показать</button>
+                <button class="btn_clear">Очистить</button>
+                <div class="count_filter_product">
+                    <p id="count_product"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div class="modal_window">
+            <div class="m_header">
+                <img class="FavotiteAvatar" src="../img/avatar_white.svg" alt="avatar">
+                <button class="btmCloseModalWindow">&#215;</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_screen"></div>
+    <script src="../JS/isEmptyObject.js"></script>
+    <script src="../JS/product.js"></script>
+    <script src="../JS/favorite.js"></script>
+    <script src="../JS/slide.js"></script>
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/window_seach.js"></script>
+</body>
+
+</html>

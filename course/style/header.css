@@ -1,0 +1,294 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #FAF9F9;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+.head_info_box
+{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    margin-bottom: 45px;
+}
+
+.head_info_content
+{
+    max-width: 1620px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.head_info_phone
+{
+   left: 0;
+}
+
+.head_info_loc
+{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.head_info_clock
+{
+    right: 0;
+}
+
+.head_info
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+}
+
+.image_head
+{
+    width: 12.5px;
+    height: 12.5px;
+    margin-right: 15px;
+}
+
+.header
+{
+    width: 100%;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header_layout
+{
+    display: flex;
+    width: 100%;
+    height: 92px;
+    max-width: 1620px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    background: #FAF9F9;
+}
+
+.header_catalog
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #424242;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header_catalog:not(:last-child)
+{
+    margin-right: 29px;
+}
+
+.header_catalog:hover
+{
+    color: #bf9999;
+}
+
+.left_info_header, .right_info_header
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.image_logo
+{
+    width: 121.75px;
+    height: 61.65px;
+    cursor: pointer;
+}
+
+.btn, .btn_seach
+{
+    position: relative;
+    border: 1px solid #BDBDBD;
+    background: none;
+    border-radius: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #BDBDBD;
+    transition: all 0.3s ease;
+    background: #FAF9F9;
+    padding: 10px 20px;
+}
+
+.btn
+{
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    color: #464646;
+}
+
+.seach
+{
+    border: none;
+    background: none;
+}
+
+.seach:focus
+{
+    outline: 0;
+}
+
+.seach_pop_up
+{
+    z-index: 2;
+}
+
+.pop_up_screen_seach
+{
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: opacity .5s cubic-bezier(.25,.8,.25,1);
+    opacity: 0;
+    z-index: 1;
+}
+
+.pop_up_screen_seach.active
+{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.image_header
+{
+    margin-right: 7px;
+}
+
+.page
+{   
+    position: relative;
+    margin: 0 auto;
+    max-width: 1620px;
+    width: 100%;
+}
+
+.path
+{
+    color: #424242;
+    display: flex;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.image_arrow
+{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.modal
+{   
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 410px;
+    height: 100%;
+    transform: translateX(101%);
+    transition: all .6s ease 0s;
+    z-index: 1000;
+}
+
+.modal.modal_active
+{
+    transform: translateX(0%);
+}
+
+.modal_window
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 410px;
+    height: 100%;
+    background-color: #FAF9F9;
+    z-index: 1000;
+    overflow-y: scroll;
+    transform:scaleX(-1);
+}
+
+.modal_screen
+{   
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: opacity .5s cubic-bezier(.25,.8,.25,1);
+    opacity: 0;
+    z-index: 999;
+}
+
+.modal_screen.mscreen_active
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.m_header
+{
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    position: relative;
+}
+
+.FavotiteAvatar
+{
+    transform: scaleX(-1);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 30px;
+    margin: 0;
+}
+
+.btmCloseModalWindow
+{
+    position: absolute;
+    font-size: 25px;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    width: 37px;
+    height: 37px;
+    transition: all 0.1s ease 0s;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btmCloseModalWindow:hover
+{
+    background-color:  #CFA5A5;
+}

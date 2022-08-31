@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="vievport" content="width = device - width, initial-scale = 1">
+    <link href="../style/header.css" rel="stylesheet" type="text/css">
+    <link href="../style/infoProductStyle.css" rel="stylesheet" type="text/css">
+    <link href="../style/favoriteProduct.css" rel="stylesheet" type="text/css">
+    <link href="../style/ProductStyle.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Spectral SC"/>
+    <title>course</title>
+</head>
+    
+<body>
+    <div class="head_info_box">
+        <div class="head_info_content">
+            <div class="head_info head_info_phone">
+                    <img class="image_head" src="../img/phone.svg" alt="phone">
+                    <p>+1 (824) 765 28 20</p>
+            </div>
+            <div class="head_info head_info_loc">
+                    <img class="image_head" src="../img/location.svg" alt="loc">
+                    <p>г. Киев, ул. Петра Алексеева, д. 6</p>
+            </div>
+            <div class="head_info head_info_clock">
+                    <img class="image_head" src="../img/clock.svg" alt="clock">
+                    <p>Ежедневно с 10:00 до 19:00</p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header_layout">
+            <div class="left_info_header">
+                <p class="header_catalog">Каталог</p>
+                <p class="header_catalog">Оплата и доставка</p>
+                <p class="header_catalog">Бонусная программа</p>
+                <p class="header_catalog">О компании</p>
+                <p class="header_catalog">Контакты</p>
+            </div>
+            <img class="image_logo" src="../img/image_2022-08-28_00-43-58.png" alt="logo">
+            <div class="right_info_header">
+                <div class="btn_seach seach_pop_up">
+                    <input class="seach" type="text" placeholder="Поиск товара"> 
+                    <img class="icon_seach" src="../img/seach.svg" alt="seach"></div>
+                </div>
+                <div class="pop_up_screen_seach" id="pop_up_screen_seach"></div>
+                <button class="btn">
+                    <img class="image_header" src="../img/avatar.svg" alt="ava">
+                    Войти
+                </button>
+                <button class="btn openFavoritesWindow">
+                    <div class="countFavoriteProduct"></div>
+                    <img class="image_header" src="../img/heard.svg" alt="like">
+                    Избранное
+                </button>
+                <button class="btn">
+                    <img class="image_header" src="../img/koshik.svg" alt="koshik">
+                    Корзина
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="page">
+        <div class="path">
+            <p>Главная</p>
+            <img class="image_arrow" src="../img/arrow.svg" alt="arrow">
+            <p>Каталог</p>
+            <img class="image_arrow" src="../img/arrow.svg" alt="arrow">
+            <p>Макраме</p>
+            <img class="image_arrow" src="../img/arrow.svg" alt="arrow">
+            <p id="#namePath"></p>
+        </div>
+        <div class="Product">
+            <div class="contentProduct">
+                <div class="boxImage_product">
+                    <img class="SelectedImage" src=""alt="product">
+                </div>
+                <div class="color"></div>
+            </div>
+            <div class="infoContent">
+                <div class="nameProduct">
+                    <p class="name"></p>
+                    <img class="image_like" src="../img/like.svg" alt="like">
+                </div>
+                <p class="description"></p>
+                <div class="characters">
+                    <p class="headCharacters">Характеристики</p>
+                    <div class="box_characters">
+                        <p class="nameCharacters">Длинна</p>
+                        <p class="outpitCharacter" id="nameCharacters1"></p>
+                    </div>
+                    <div class="box_characters">
+                        <p class="nameCharacters">Производитель</p>
+                        <p class="outpitCharacter" id="nameCharacters2"></p>
+                    </div>
+                    <div class="box_characters">
+                        <p class="nameCharacters">Состав</p>
+                        <p class="outpitCharacter" id="nameCharacters3"></p>
+                    </div>
+                    <div class="box_characters">
+                        <p class="nameCharacters">Толщина</p>
+                        <p class="outpitCharacter" id="nameCharacters4"></p>
+                    </div>
+                </div>
+                <div class="contentPrice">
+                    <p class="price"></p>
+                    <div class="addProduct">
+                        <p class="add">&#8211;</p>
+                        <p>1</p>
+                        <p class="add">+</p>
+                    </div>
+                    <button class="btnBasket">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <p class="subtitle">Отзывы</p>
+            <div class="boxSliderReviews">
+                <div class="btnSliderReviews">
+                    <img class="btnLeft" src="../img/arrowleft.svg" alt="left">
+                </div>
+                <div class="AllSlideReviews">
+                    <div class="SlideReviews">
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+
+                        <div class="contentSlideReviewsr">
+                            <div class="infoUser">
+                                <img class="avatarReviews" src="../img/photo_2022-08-31_20-00-21.jpg" alt="ava">
+                                <div>
+                                    <p class="NameUser">Евгения Доценко</p>
+                                    <div class="starts">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                        <img class="star" src="../img/star.svg" alt="star">
+                                    </div>
+                                </div>
+                                <div class="ContentdataUserComent">
+                                    <p class="dataUserComent">13.06.2021 12:30</p>
+                                </div>
+                            </div>
+                            <div class="UserComent">
+                                <p class="comentText">Комментарий: </p>
+                                <p class="comentText coment">Хороший шпагат</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btnSliderReviews">
+                    <img class="btnRight" src="../img/arrowleft.svg" alt="right">
+                </div>
+            </div>
+        </div>
+        <div class="loockSame">
+            <div class="AllProducts"></div>
+        </div>
+    <div class="modal" id="modal">
+        <div class="modal_window">
+            <div class="m_header">
+                <button class="btmCloseModalWindow">&#215;</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal_screen"></div>
+    <script src="../JS/isEmptyObject.js"></script>
+    <script src="../JS/sliderComent.js"></script>
+    <script src="../JS/ProductInfo.js"></script>
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/window_seach.js"></script>
+</body>
+
+</html>

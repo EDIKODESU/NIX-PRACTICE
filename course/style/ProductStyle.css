@@ -1,0 +1,123 @@
+.div_product
+{
+    position: relative;
+    width: 245px;
+    height: 422px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(68, 68, 68, 0.05);
+    border-radius: 20px;
+    margin: 0 12px 32px 12px;
+    padding: 30px 35px 30px 35px;
+}
+
+.div_product:hover
+{
+    box-shadow: 0px 0px 16px 3px #42424217
+}
+
+.content_img
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+
+.image_like, .image_dot
+{
+    cursor: pointer;
+}
+
+.image_like
+{
+    width: 16px;
+    height: 15px;
+}
+
+.content_product
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.image_product
+{
+    width: 200px;
+}
+
+.content_text_product
+{
+    line-height: 105%;
+    color: #424242;
+    margin: 15px 0 10px 0;
+}
+
+.content_text
+{
+    margin: 0;
+}
+
+.color_product
+{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-content: center;
+}
+
+.circle_color
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    margin-right: 3px;
+}
+
+.cost_product
+{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #424242;
+    margin: 12px 0 16px 0;
+}
+
+.btn_product
+{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #BDBDBD;
+    border-radius: 46px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background: linear-gradient(102.48deg, #976464 -29.03%, #CFA5A5 97.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    cursor: pointer;
+}
+
+.content_btn_product
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_kosh
+{
+    width: 14px;
+    height: 13px;
+    margin-right: 8px;
+}
